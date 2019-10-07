@@ -1,9 +1,20 @@
 <?php 
 // You can use include/include_once or require/require_once
+require_once('encrypted.php');
 require_once('blockchain.php');
-$b = new Blockchain("Genesis Block");
-$b->add('Block tambah 1');
-$b->add('Block tambah lagi');
+// $b = new Blockchain("Genesis Block");
+// $b->add('Block tambah 1');
+// $b->add('Block tambah lagi');
 
-print $b."\n";
-var_export($b->isValid());
+// print $b[1]."\n";
+// var_export($b->isValid());
+// print $b;
+$key = "1234567890";
+$data = "Veris Juniardi";
+
+
+$e = Encrypt::encryptedThis($data, $key);
+print "\n".$e;
+
+$d = Encrypt::decryptedThis("ZVpvMEtCblM5UlJuekppclFBbk1NQT09OjoDWhaaeV7bpSWRI/IUUBa4", $key);
+print "\n".$d;
