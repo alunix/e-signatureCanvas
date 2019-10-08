@@ -14,7 +14,8 @@ $data = "Veris Juniardi";
 
 
 $e = Encrypt::encryptedThis($data, $key);
-print "\n".$e;
+print $e."\n";
 
-$d = Encrypt::decryptedThis("ZVpvMEtCblM5UlJuekppclFBbk1NQT09OjoDWhaaeV7bpSWRI/IUUBa4", $key);
-print "\n".$d;
+$d = Encrypt::decryptedThis($e, $key);
+print $d;
+print "\n";

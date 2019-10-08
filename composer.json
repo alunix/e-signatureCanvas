@@ -1,0 +1,14 @@
+{
+    "name": "zero/e-sign-web",
+    "description": "Plugin Tandatangan Elektronik Memanfaatkan Metodologi Blockchain dan QR Code",
+    "authors": [
+        {
+            "name": "Veris Juniardi",
+            "email": "veris.juniardi@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "dev-master",
+        "endroid/qr-code": "^3.5"
+    }
+}
